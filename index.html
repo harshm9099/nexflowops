@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexflowops Technologies | AI Automation & Business Intelligence</title>
+    <meta name="description" content="Nexflowops Technologies Pvt. Ltd. builds intelligent AI systems that automate operations, generate leads, and accelerate business growth.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- React Terminal Styles -->
+    <link rel="stylesheet" href="assets/terminal-widget/agent-index.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Nexflowops Logo">
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#industries" class="nav-link">Industries</a>
+                <a href="#how-it-works" class="nav-link">Process</a>
+                <a href="#leadership" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-close">
+            <button id="close-menu-btn" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#industries" class="mobile-link">Industries</a>
+            <a href="#how-it-works" class="mobile-link">Process</a>
+            <a href="#leadership" class="mobile-link">Team</a>
+            <a href="#case-studies" class="mobile-link">Results</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="neural-network" id="neural-network"></div>
+                <div class="glow-orb top-right"></div>
+                <div class="glow-orb bottom-left"></div>
+            </div>
+            
+            <div class="container hero-grid animate-on-load" style="opacity: 0; transform: translateY(20px);">
+                <div class="hero-text-content">
+                    <div class="hero-badge">Next-Gen AI Solutions</div>
+                    <h1 class="hero-heading">
+                        Transform Your Business with <br>
+                        <span class="gradient-text">AI Automation</span>
+                    </h1>
+                    <p class="hero-subheading">
+                        <strong>Powering the Future of Work</strong><br><br>
+                        Nexflowops Technologies Pvt. Ltd. is an AI automation company focused on building intelligent systems that help businesses operate smarter and scale faster.<br>
+                        We design custom AI workflows, automation pipelines, and advanced integrations that eliminate repetitive tasks and unlock new growth opportunities.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-glow btn-lg">Book a Consultation</a>
+                        <a href="#services" class="btn btn-secondary glass-btn btn-lg">Explore AI Solutions</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual-content">
+                    <div id="root-hero" class="w-full"></div> <!-- Original AI Terminal Mount Point -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Nexflowops -->
+        <section class="about section-padding reveal" id="about">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h2 class="section-title">Powering the Future of <span class="gradient-text">Work</span></h2>
+                    <p class="about-desc text-muted">
+                        Nexflowops Technologies Pvt. Ltd. is an AI automation company focused on building intelligent systems that help businesses operate smarter and scale faster.
+                    </p>
+                    <p class="about-desc text-muted">
+                        We design custom AI workflows, automation pipelines, and advanced integrations that eliminate repetitive tasks and unlock new growth opportunities.
+                    </p>
+                    <div class="location-badge">
+                        <i class="fas fa-map-marker-alt"></i> Vadodara, Gujarat, India
+                    </div>
+                </div>
+                <div class="about-visual glass-panel flex p-0">
+                    <div id="root-about" class="w-full"></div> <!-- React Terminal Mount Point -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Our Services -->
+        <section class="services section-padding reveal bg-panel" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Our <span class="gradient-text">AI Services</span></h2>
+                    <p class="section-subtitle">Intelligent solutions designed to automate and optimize every aspect of your business.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                        <h3 class="service-title">AI Workflow Automation</h3>
+                        <p class="service-desc text-muted">Automate repetitive business processes and operations to save time and reduce human error.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="service-title">AI Lead Generation Systems</h3>
+                        <p class="service-desc text-muted">Build automated systems that continuously generate and qualify leads, operating 24/7.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3 class="service-title">AI Marketing Automation</h3>
+                        <p class="service-desc text-muted">Automate content creation, marketing campaigns, and real-time ad optimization.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                        <h3 class="service-title">CRM & Sales Automation</h3>
+                        <p class="service-desc text-muted">AI-powered sales pipelines, intelligent follow-ups, and comprehensive performance tracking.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-robot"></i></div>
+                        <h3 class="service-title">AI Chatbots & Support</h3>
+                        <p class="service-desc text-muted">Deploy intelligent conversational assistants for websites and WhatsApp integrated with your data.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3 class="service-title">Custom AI Integrations</h3>
+                        <p class="service-desc text-muted">Seamlessly integrate AI capabilities into your existing CRMs, ERPs, SaaS tools, and internal systems.</p>
+                    </div>
+                </div>
+
+                <div class="section-header text-center" style="margin-top: 5rem;">
+                    <h2 class="section-title">AI Content <span class="gradient-text">Creation</span></h2>
+                    <p class="section-subtitle">Generative AI for professional-grade media at scale.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-video"></i></div>
+                        <h3 class="service-title">AI Video Generation</h3>
+                        <p class="service-desc text-muted">Product demos, explainer videos, and marketing content generated by AI in minutes.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-microphone-alt"></i></div>
+                        <h3 class="service-title">AI Voiceovers</h3>
+                        <p class="service-desc text-muted">Ultra-realistic AI voice narrations for videos, IVR systems, and audio content in 30+ languages.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-image"></i></div>
+                        <h3 class="service-title">AI Image Generation</h3>
+                        <p class="service-desc text-muted">Brand-consistent product images, marketing visuals, and creative assets generated on-demand.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3 class="service-title">AI Marketing Content</h3>
+                        <p class="service-desc text-muted">Complete campaign content packages including copy, visuals, and multi-channel assets.</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fas fa-tv"></i></div>
+                        <h3 class="service-title">AI Commercial Ads</h3>
+                        <p class="service-desc text-muted">Produce professional AI-powered commercial advertisements for brands, products, and services — fast, scalable, and cost-effective.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Industries We Help -->
+        <section class="industries section-padding reveal border-top" id="industries">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Industries We <span class="gradient-text">Transform</span></h2>
+                    <p class="section-subtitle">Tailored AI solutions for diverse business sectors.</p>
+                </div>
+                
+                <div class="industries-grid">
+                    <div class="industry-item glass-pill"><i class="fas fa-shopping-cart"></i> E-commerce</div>
+                    <div class="industry-item glass-pill"><i class="fas fa-building"></i> Real Estate</div>
+                    <div class="industry-item glass-pill"><i class="fas fa-heartbeat"></i> Healthcare</div>
+                    <div class="industry-item glass-pill"><i class="fas fa-cloud"></i> SaaS Companies</div>
+                    <div class="industry-item glass-pill"><i class="fas fa-ad"></i> Marketing Agencies</div>
+                    <div class="industry-item glass-pill"><i class="fas fa-store"></i> Local Businesses</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. How It Works -->
+        <section class="how-it-works section-padding reveal" id="how-it-works">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+                    <p class="section-subtitle">Our proven 4-step framework to intelligent automation.</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">Discovery Consultation</h3>
+                            <p class="timeline-desc text-muted">We deeply understand your business workflows, bottlenecks, and automation goals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">AI Strategy Design</h3>
+                            <p class="timeline-desc text-muted">Our experts outline a comprehensive automation architecture and technology roadmap.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">Implementation</h3>
+                            <p class="timeline-desc text-muted">We develop, integrate, and deploy custom AI solutions into your exact operational environment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">4</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">Optimization</h3>
+                            <p class="timeline-desc text-muted">Continuous monitoring, refining, and improving system performance over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Leadership Team -->
+        <section class="leadership section-padding reveal" id="leadership">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Meet the Architects of Your <span class="gradient-text">AI Future</span></h2>
+                    <p class="section-subtitle">The visionary leadership driving innovation and growth.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card glass-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar gradient-bg">HM</div>
+                        </div>
+                        <h3 class="team-name">Harshpalsinh Matroja</h3>
+                        <div class="team-role gradient-text">CEO & Founder</div>
+                        <p class="team-desc text-muted">Visionary leader with 5+ years of experience in enterprise technology, AI solutions, and digital transformation.</p>
+                    </div>
+                    
+                    <div class="team-card glass-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar gradient-bg">NM</div>
+                        </div>
+                        <h3 class="team-name">Nisarg Mehta</h3>
+                        <div class="team-role gradient-text">Business Head</div>
+                        <p class="team-desc text-muted">Drives business strategy, partnerships, and growth initiatives while ensuring exceptional client success.</p>
+                    </div>
+                    
+                    <div class="team-card glass-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar gradient-bg">PP</div>
+                        </div>
+                        <h3 class="team-name">Parth Prajapati</h3>
+                        <div class="team-role gradient-text">AI Architect</div>
+                        <p class="team-desc text-muted">Specializes in designing and developing advanced AI systems, automation solutions, and intelligent architectures to power scalable business solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Why Choose Nexflowops & 8. Case Studies / Results -->
+        <section class="why-us section-padding reveal border-top bg-panel" id="why-us">
+            <div class="container why-container">
+                <div class="why-content">
+                    <h2 class="section-title">Why Choose <span class="gradient-text">Nexflowops</span></h2>
+                    <p class="why-subtitle text-muted">We don't just supply tools; we engineer a competitive advantage for your business.</p>
+                    
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle ai-color"></i> <span><strong>Custom AI Systems</strong> configured to your specific needs.</span></li>
+                        <li><i class="fas fa-check-circle ai-color"></i> <span><strong>Faster Business Scaling</strong> without exponentially increasing headcount.</span></li>
+                        <li><i class="fas fa-check-circle ai-color"></i> <span><strong>Reduced Operational Costs</strong> via precision automation.</span></li>
+                        <li><i class="fas fa-check-circle ai-color"></i> <span><strong>Intelligent Automation</strong> bridging legacy software to modern AI.</span></li>
+                        <li><i class="fas fa-check-circle ai-color"></i> <span><strong>Expert AI Engineers</strong> based out of India with global expertise.</span></li>
+                    </ul>
+                </div>
+                
+                <div class="stats-grid" id="case-studies">
+                    <div class="stat-card glass-panel text-center">
+                        <div class="stat-value gradient-text counter" data-target="3">0</div><span class="stat-value gradient-text">x</span>
+                        <div class="stat-label">Lead Gen Growth</div>
+                    </div>
+                    <div class="stat-card glass-panel text-center">
+                        <div class="stat-value gradient-text counter" data-target="60">0</div><span class="stat-value gradient-text">%</span>
+                        <div class="stat-label">Reduction in Manual Tasks</div>
+                    </div>
+                    <div class="stat-card glass-panel text-center">
+                        <div class="stat-value gradient-text counter" data-target="400">0</div><span class="stat-value gradient-text">%</span>
+                        <div class="stat-label">ROI from AI Sales Automation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Testimonials -->
+        <section class="testimonials section-padding reveal" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Client <span class="gradient-text">Success</span></h2>
+                    <p class="section-subtitle">Trusted by Industry Leaders</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="quote">"NexFlowOps didn't just automate our workflows — they fundamentally transformed how we operate. Our team now focuses on strategy while AI handles everything else. The ROI in the first quarter alone was extraordinary."</p>
+                        <div class="author">
+                            <div class="team-avatar-wrapper" style="width: 50px; height: 50px; margin: 0 1rem 0 0;">
+                                <div class="team-avatar gradient-bg" style="font-size: 1rem;">PM</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>Pradip Mahida</h4>
+                                <span>Priyosha Renovation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card glass-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="quote">"The AI calling agent now handles our appointment bookings automatically, saving our team hours of manual work and ensuring customers get instant scheduling. On top of that, the AI chatbot manages 94% of customer queries without human support, increasing satisfaction while reducing our support costs by 65%."</p>
+                        <div class="author">
+                            <div class="team-avatar-wrapper" style="width: 50px; height: 50px; margin: 0 1rem 0 0;">
+                                <div class="team-avatar gradient-bg" style="font-size: 1rem;">DR</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>DDS, Richard</h4>
+                                <span>SmileCare Dental clinic</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card glass-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="quote">"From the first discovery call to full deployment, NexFlowOps demonstrated a depth of AI expertise I haven't seen elsewhere. They're not consultants — they're genuine transformation partners who deliver results."</p>
+                        <div class="author">
+                            <div class="team-avatar-wrapper" style="width: 50px; height: 50px; margin: 0 1rem 0 0;">
+                                <div class="team-avatar gradient-bg" style="font-size: 1rem;">DD</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>Dax Dani</h4>
+                                <span>Director, Coin Veda</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9 & 10. Call to Action & Contact Form -->
+        <section class="contact-section section-padding reveal" id="contact">
+            <div class="container contact-container glass-panel large-glass">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Build an <br><span class="gradient-text">AI-Powered Business?</span></h2>
+                    <p class="contact-desc text-muted">Automate operations, scale faster, and embrace the future. Book your free discovery consultation today.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>356, Broadway Pride<br>Vadodara, Gujarat, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Registered Address</h4>
+                                <p>1/137, Darjivaru faliyu<br>Bharuch, Gujarat, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:info@nexflowops.com" class="hover-link">info@nexflowops.com</a>
+                                <a href="mailto:info@nexflowops.com" class="hover-link">ceo@nexflowops.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Contact</h4>
+                                <a href="tel:+919875237712" class="hover-link">+91 9875237712</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/9875237712" target="_blank" class="hover-link">
+                                    Chat on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required class="glass-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required class="glass-input">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required class="glass-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="glass-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" class="glass-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="requirements">Project Requirements</label>
+                            <textarea id="requirements" name="requirements" rows="4" required class="glass-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-glow">Submit Inquiry <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Nexflowops Logo">
+                </a>
+                <p class="footer-desc text-muted">
+                    Intelligent systems that automate operations, generate leads, and accelerate business growth.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/nexflowops-technologies-private-limited/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/Nexflowops12" class="social-icon" aria-label="X"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/nexflowops?igsh=MTllNWhwdWJseXl0MQ==" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div> 
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#how-it-works">Our Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>             
+                    <li><a href="#services">AI Workflow Automation</a></li>
+                    <li><a href="#services">Lead Generation Systems</a></li>
+                    <li><a href="#services">Marketing Automation</a></li>
+                    <li><a href="#services">Custom Integrations</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#">Blog (Coming Soon)</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom border-top">
+            <div class="container text-center">
+                <p> 2026 Nexflowops Technologies Pvt. Ltd. All rights reserved. CIN: U62010GJ2026PTC173936 </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="assets/terminal-widget/agent-terminal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+            
